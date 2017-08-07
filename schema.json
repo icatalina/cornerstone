@@ -2349,13 +2349,43 @@
       },
       {
         "type": "color",
+        "label": "Text hover color",
+        "id": "optimizedCheckout-buttonSecondary-colorHover"
+      },
+      {
+        "type": "color",
+        "label": "Text active color",
+        "id": "optimizedCheckout-buttonSecondary-colorActive"
+      },
+      {
+        "type": "color",
         "label": "Background color",
         "id": "optimizedCheckout-buttonSecondary-backgroundColor"
       },
       {
         "type": "color",
+        "label": "Background hover color",
+        "id": "optimizedCheckout-buttonSecondary-backgroundColorHover"
+      },
+      {
+        "type": "color",
+        "label": "Background active color",
+        "id": "optimizedCheckout-buttonSecondary-backgroundColorActive"
+      },
+      {
+        "type": "color",
         "label": "Border color",
         "id": "optimizedCheckout-buttonSecondary-borderColor"
+      },
+      {
+        "type": "color",
+        "label": "Border hover color",
+        "id": "optimizedCheckout-buttonSecondary-borderColorHover"
+      },
+      {
+        "type": "color",
+        "label": "Border active color",
+        "id": "optimizedCheckout-buttonSecondary-borderColorActive"
       },
       {
         "type": "font",

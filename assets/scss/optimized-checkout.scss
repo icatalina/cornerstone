@@ -134,6 +134,19 @@ body {
     color: stencilColor("optimizedCheckout-buttonSecondary-color");
     font-family: stencilFontFamily("optimizedCheckout-buttonSecondary-font"), Arial, Helvetica, sans-serif;
     font-weight: stencilFontWeight("optimizedCheckout-buttonSecondary-font");
+
+    &:focus,
+    &:hover {
+        background-color: stencilColor("optimizedCheckout-buttonSecondary-backgroundColorHover");
+        border-color: stencilColor("optimizedCheckout-buttonSecondary-borderColorHover");
+        color: stencilColor("optimizedCheckout-buttonSecondary-colorHover");
+    }
+
+    &:active {
+        background-color: stencilColor("optimizedCheckout-buttonSecondary-backgroundColorActive");
+        border-color: stencilColor("optimizedCheckout-buttonSecondary-borderColorActive");
+        color: stencilColor("optimizedCheckout-buttonSecondary-colorActive");
+    }
 }
 
 //
