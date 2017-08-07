@@ -295,6 +295,29 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(stencilColor("
 }
 
 //
+// Form Checklist (Shipping / Payment methods)
+// Background & Border & Text Color
+// Styles form checklists
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-form-checklist {
+    background-color: stencilColor("optimizedCheckout-formChecklist-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-formChecklist-borderColor");
+    color: stencilColor("optimizedCheckout-formChecklist-color");
+}
+
+.optimizedCheckout-form-checklist-item {
+    background-color: stencilColor("optimizedCheckout-formChecklist-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-formChecklist-borderColor");
+}
+
+.optimizedCheckout-form-checklist-item:hover,
+.optimizedCheckout-form-checklist-item--selected {
+    background-color: stencilColor("optimizedCheckout-formChecklist-backgroundColorSelected");
+    border-color: stencilColor("optimizedCheckout-formChecklist-borderColor");
+}
+
+//
 // Loading Toaster
 // Background & Text Color
 // Styles the Loading Toaster

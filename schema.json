@@ -2484,6 +2484,30 @@
       },
       {
         "type": "heading",
+        "content": "Form Checklist"
+      },
+      {
+        "type": "color",
+        "label": "Background Color",
+        "id": "optimizedCheckout-formChecklist-backgroundColor"
+      },
+      {
+        "type": "color",
+        "label": "Selected Background Color",
+        "id": "optimizedCheckout-formChecklist-backgroundColorSelected"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "optimizedCheckout-formChecklist-color"
+      },
+      {
+        "type": "color",
+        "label": "Border Color",
+        "id": "optimizedCheckout-formChecklist-borderColor"
+      },
+      {
+        "type": "heading",
         "content": "Loading Toaster"
       },
       {
