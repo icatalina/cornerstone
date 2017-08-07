@@ -2396,6 +2396,20 @@
             "label": "Transparent"
           }
         ]
+      },
+      {
+        "type": "heading",
+        "content": "Loading Toaster"
+      },
+      {
+        "type": "color",
+        "label": "Background Color",
+        "id": "optimizedCheckout-loadingToaster-backgroundColor"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "optimizedCheckout-loadingToaster-textColor"
       }
     ]
   },

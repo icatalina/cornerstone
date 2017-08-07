@@ -198,3 +198,14 @@ a {
         fill: stencilColor("optimizedCheckout-discountBanner-iconColor");
     }
 }
+
+//
+// Loading Toaster
+// Background & Text Color
+// Styles the Loading Toaster
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-loadingToaster {
+    background-color: stencilColor("optimizedCheckout-loadingToaster-backgroundColor");
+    color: stencilColor("optimizedCheckout-loadingToaster-textColor");
+}

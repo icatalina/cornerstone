@@ -251,6 +251,8 @@
     "optimizedCheckout-formField-backgroundColor": "white",
     "optimizedCheckout-formField-borderColor": "#989898",
     "price_as_low_as": false,
+    "optimizedCheckout-loadingToaster-backgroundColor": "#0000ff",
+    "optimizedCheckout-loadingToaster-textColor": "#ff00ff",
     "product_sale_badges": "none",
     "color_badge_product_sale_badges": "#007dc6",
     "color_text_product_sale_badges": "#ffffff",
@@ -463,6 +465,8 @@
         "optimizedCheckout-form-textColor": "#ffffff",
         "optimizedCheckout-formField-backgroundColor": "transparent",
         "optimizedCheckout-formField-borderColor": "#9f9f9f"
+        "optimizedCheckout-loadingToaster-backgroundColor": "#0000ff",
+        "optimizedCheckout-loadingToaster-textColor": "#ff00ff",
       }
     },
     {
@@ -610,6 +614,8 @@
         "optimizedCheckout-formField-borderColor": "#989898",
         "optimizedCheckout-headingPrimary-font": "Google_Volkhov_400",
         "optimizedCheckout-headingSecondary-font": "Google_Volkhov_400"
+        "optimizedCheckout-loadingToaster-backgroundColor": "#0000ff",
+        "optimizedCheckout-loadingToaster-textColor": "#ff00ff",
       }
     }
   ]
