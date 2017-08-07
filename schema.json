@@ -2444,23 +2444,43 @@
       },
       {
         "type": "color",
+        "label": "Text Color",
+        "id": "optimizedCheckout-formField-textColor"
+      },
+      {
+        "type": "color",
+        "label": "Background Color",
+        "id": "optimizedCheckout-formField-backgroundColor"
+      },
+      {
+        "type": "color",
+        "label": "Shadow Color",
+        "id": "optimizedCheckout-formField-shadowColor"
+      },
+      {
+        "type": "color",
+        "label": "Placeholder Color",
+        "id": "optimizedCheckout-formField-placeholderColor"
+      },
+      {
+        "type": "color",
         "label": "Border Color",
         "id": "optimizedCheckout-formField-borderColor"
       },
       {
-        "type": "select",
-        "label": "Background Color",
-        "id": "optimizedCheckout-formField-backgroundColor",
-        "options": [
-          {
-            "value": "white",
-            "label": "White"
-          },
-          {
-            "value": "transparent",
-            "label": "Transparent"
-          }
-        ]
+        "type": "color",
+        "label": "Focus Border Color",
+        "id": "optimizedCheckout-formField-borderColorFocus"
+      },
+      {
+        "type": "color",
+        "label": "Input Control Color",
+        "id": "optimizedCheckout-formField-inputControlColor"
+      },
+      {
+        "type": "color",
+        "label": "Error Color",
+        "id": "optimizedCheckout-formField-errorColor"
       },
       {
         "type": "heading",
