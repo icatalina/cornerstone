@@ -2228,6 +2228,11 @@
         ]
       },
       {
+        "type": "color",
+        "label": "Hover Color",
+        "id": "optimizedCheckout-link-hoverColor"
+      },
+      {
         "type": "heading",
         "content": "Primary button"
       },

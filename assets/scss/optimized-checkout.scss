@@ -145,6 +145,10 @@ a {
     color: stencilColor("optimizedCheckout-link-color");
     font-family: stencilFontFamily("optimizedCheckout-link-font"), Arial, Helvetica, sans-serif;
     font-weight: stencilFontWeight("optimizedCheckout-link-font");
+
+    &:hover {
+        color: stencilColor("optimizedCheckout-link-hoverColor");
+    }
 }
 
 //
