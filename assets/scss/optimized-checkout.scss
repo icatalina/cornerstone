@@ -179,6 +179,10 @@ a {
     border-color: stencilColor("optimizedCheckout-orderSummary-borderColor");
 }
 
+.optimizedCheckout-checkoutStep {
+    border-color: stencilColor("optimizedCheckout-step-borderColor");
+}
+
 //
 // Checkout Steps
 // Background & Text Color

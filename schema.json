@@ -1964,6 +1964,11 @@
         "id": "optimizedCheckout-step-textColor"
       },
       {
+        "type": "color",
+        "label": "Border color",
+        "id": "optimizedCheckout-step-borderColor"
+      },
+      {
         "type": "heading",
         "content": "Primary headings"
       },
