@@ -1842,6 +1842,16 @@
         ]
       },
       {
+        "type": "color",
+        "label": "Text color",
+        "id": "optimizedCheckout-header-textColor"
+      },
+      {
+        "type": "color",
+        "label": "Border color",
+        "id": "optimizedCheckout-header-borderColor"
+      },
+      {
         "type": "heading",
         "content": "Logo"
       },
