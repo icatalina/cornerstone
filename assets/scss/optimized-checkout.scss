@@ -63,6 +63,8 @@ body {
 
 .optimizedCheckout-overlay {
     background-color: stencilColor("optimizedCheckout-body-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-step-borderColor");
+    color: stencilColor("optimizedCheckout-contentPrimary-color");
 }
 
 //
