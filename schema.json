@@ -2243,6 +2243,11 @@
       },
       {
         "type": "color",
+        "label": "Text disabled color",
+        "id": "optimizedCheckout-buttonPrimary-colorDisabled"
+      },
+      {
+        "type": "color",
         "label": "Background color",
         "id": "optimizedCheckout-buttonPrimary-backgroundColor"
       },
@@ -2258,6 +2263,11 @@
       },
       {
         "type": "color",
+        "label": "Background disabled color",
+        "id": "optimizedCheckout-buttonPrimary-backgroundColorDisabled"
+      },
+      {
+        "type": "color",
         "label": "Border color",
         "id": "optimizedCheckout-buttonPrimary-borderColor"
       },
@@ -2270,6 +2280,11 @@
         "type": "color",
         "label": "Border active color",
         "id": "optimizedCheckout-buttonPrimary-borderColorActive"
+      },
+      {
+        "type": "color",
+        "label": "Border disabled color",
+        "id": "optimizedCheckout-buttonPrimary-borderColorDisabled"
       },
       {
         "type": "font",
