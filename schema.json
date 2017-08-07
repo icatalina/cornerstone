@@ -1945,6 +1945,11 @@
         "id": "optimizedCheckout-orderSummary-backgroundColor"
       },
       {
+        "type": "color",
+        "label": "Border color",
+        "id": "optimizedCheckout-orderSummary-borderColor"
+      },
+      {
         "type": "heading",
         "content": "Checkout steps"
       },

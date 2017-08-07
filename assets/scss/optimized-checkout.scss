@@ -154,6 +154,12 @@ a {
 
 .optimizedCheckout-orderSummary {
     background-color: stencilColor("optimizedCheckout-orderSummary-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-orderSummary-borderColor");
+    box-shadow: 0 1px 4px transparentize(stencilColor("optimizedCheckout-orderSummary-borderColor"), 0.4);
+}
+
+.optimizedCheckout-orderSummary-cartSection {
+    border-color: stencilColor("optimizedCheckout-orderSummary-borderColor");
 }
 
 //
