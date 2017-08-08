@@ -149,6 +149,17 @@ body {
         border-color: stencilColor("optimizedCheckout-buttonSecondary-borderColorActive");
         color: stencilColor("optimizedCheckout-buttonSecondary-colorActive");
     }
+
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:focus,
+    &[disabled].is-active,
+    &[disabled].is-loading,
+    &[disabled].active {
+        background-color: stencilColor("optimizedCheckout-buttonPrimary-backgroundColorDisabled");
+        border-color: stencilColor("optimizedCheckout-buttonPrimary-borderColorDisabled");
+        color: stencilColor("optimizedCheckout-buttonPrimary-colorDisabled");
+    }
 }
 
 //
