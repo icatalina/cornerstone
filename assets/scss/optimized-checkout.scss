@@ -15,6 +15,10 @@
 // Background, Logo Position
 // -----------------------------------------------------------------------------
 
+*:focus {
+    outline-color: stencilColor("optimizedCheckout-colorFocus");
+}
+
 .optimizedCheckout-header {
     background-color: stencilColor("optimizedCheckout-header-backgroundColor");
     // scss-lint:disable StringQuotes
@@ -106,6 +110,11 @@ body {
         color: stencilColor("optimizedCheckout-buttonPrimary-colorHover");
     }
 
+    &:focus {
+        border-color: stencilColor("optimizedCheckout-colorFocus");
+        box-shadow: 0 0 3px stencilColor("optimizedCheckout-colorFocus");
+    }
+
     &:active {
         background-color: stencilColor("optimizedCheckout-buttonPrimary-backgroundColorActive");
         border-color: stencilColor("optimizedCheckout-buttonPrimary-borderColorActive");
@@ -144,6 +153,11 @@ body {
         color: stencilColor("optimizedCheckout-buttonSecondary-colorHover");
     }
 
+    &:focus {
+        border-color: stencilColor("optimizedCheckout-colorFocus");
+        box-shadow: 0 0 3px stencilColor("optimizedCheckout-colorFocus");
+    }
+
     &:active {
         background-color: stencilColor("optimizedCheckout-buttonSecondary-backgroundColorActive");
         border-color: stencilColor("optimizedCheckout-buttonSecondary-borderColorActive");
@@ -172,6 +186,7 @@ a {
     font-family: stencilFontFamily("optimizedCheckout-link-font"), Arial, Helvetica, sans-serif;
     font-weight: stencilFontWeight("optimizedCheckout-link-font");
 
+    &:focus,
     &:hover {
         color: stencilColor("optimizedCheckout-link-hoverColor");
     }
@@ -237,7 +252,7 @@ a {
 // -----------------------------------------------------------------------------
 
 $optimizedCheckout-input-boxShadow: inset 0 1px 1px stencilColor("optimizedCheckout-formField-shadowColor");
-$optimizedCheckout-input--focus-boxShadow: 0 0 3px transparentize(stencilColor("optimizedCheckout-formField-borderColorFocus"), 0.4);
+$optimizedCheckout-input--focus-boxShadow: 0 0 3px transparentize(stencilColor("optimizedCheckout-colorFocus"), 0.4);
 $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(stencilColor("optimizedCheckout-formField-errorColor"), 0.4);
 
 .optimizedCheckout-form-input,
@@ -262,7 +277,7 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(stencilColor("
 .optimizedCheckout-form-select:focus,
 .optimizedCheckout-form-select:hover {
     background-color: stencilColor("optimizedCheckout-formField-backgroundColor");
-    border-color: stencilColor("optimizedCheckout-formField-borderColorFocus");
+    border-color: stencilColor("optimizedCheckout-colorFocus");
     box-shadow: $optimizedCheckout-input--focus-boxShadow, $optimizedCheckout-input-boxShadow;
 }
 
@@ -284,7 +299,7 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(stencilColor("
 
     .optimizedCheckout-form-radio:focus + &,
     .optimizedCheckout-form-checkbox:focus + & {
-        border-color: stencilColor("optimizedCheckout-formField-borderColorFocus");
+        border-color: stencilColor("optimizedCheckout-colorFocus");
         box-shadow: $optimizedCheckout-input--focus-boxShadow, $optimizedCheckout-input-boxShadow;
     }
 

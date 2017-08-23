@@ -2080,6 +2080,11 @@
         "id": "optimizedCheckout-body-backgroundColor"
       },
       {
+        "type": "color",
+        "label": "Focus Color",
+        "id": "optimizedCheckout-colorFocus"
+      },
+      {
         "type": "heading",
         "content": "Primary content"
       },
@@ -2471,11 +2476,6 @@
         "type": "color",
         "label": "Border Color",
         "id": "optimizedCheckout-formField-borderColor"
-      },
-      {
-        "type": "color",
-        "label": "Focus Border Color",
-        "id": "optimizedCheckout-formField-borderColorFocus"
       },
       {
         "type": "color",
