@@ -26,6 +26,7 @@ module.exports = {
                             'dynamic-import-webpack', // Needed for dynamic imports.
                             'lodash', // Automagically tree-shakes lodash.
                             'transform-regenerator', // Transforms async and generator functions.
+                            'transform-object-rest-spread',
                         ],
                         presets: [
                             ['env', {
@@ -57,6 +58,7 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
+            React: 'react',
             'window.jQuery': 'jquery',
         }),
         new webpack.optimize.CommonsChunkPlugin({
