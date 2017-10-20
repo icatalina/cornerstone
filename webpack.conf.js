@@ -14,7 +14,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 include: /(assets\/js|assets\\js|stencil-utils)/,
                 use: {
                     loader: 'babel-loader',
@@ -33,6 +33,7 @@ module.exports = {
                                 modules: false, // Don't transform modules; needed for tree-shaking.
                                 useBuiltIns: true, // Tree-shake babel-polyfill.
                             }],
+                            'react',
                         ],
                     }
                 }
@@ -74,6 +75,7 @@ module.exports = {
             'slick-carousel': path.resolve(__dirname, 'node_modules/slick-carousel/slick/slick.min.js'),
             sweetalert2: path.resolve(__dirname, 'node_modules/sweetalert2/dist/sweetalert2.min.js'),
         },
+        extensions: ['.js', '.jsx', '.json'],
     },
     watch: false,
 };
