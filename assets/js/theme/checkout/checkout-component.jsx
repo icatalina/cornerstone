@@ -1,6 +1,6 @@
+import React from 'react';
 import { initializeSdk } from 'ng-checkout/dist/checkout-sdk';
 import Snackbar from 'material-ui/Snackbar';
-import React from 'react';
 import Billing from './billing-component';
 import Cart from './cart-component';
 import Customer from './customer-component';
@@ -52,7 +52,7 @@ export default class CheckoutComponent extends React.Component {
                 />
 
                 <Shipping
-                    address={ checkout.getQuote().shippingAddress }
+                    address={ checkout.getShippingAddress() }
                     countries={ checkout.getShippingCountries() }
                     options={ checkout.getShippingOptions() }
                     selectedOptionId={ checkout.getQuote().shippingOption }
@@ -61,7 +61,7 @@ export default class CheckoutComponent extends React.Component {
                 />
 
                 <Billing
-                    address={ checkout.getQuote().billingAddress }
+                    address={ checkout.getBillingAddress() }
                     countries={ checkout.getBillingCountries() }
                     onUpdate={ (...args) => this._handleUpdateBillingAddress(...args) }
                 />
@@ -89,11 +89,11 @@ export default class CheckoutComponent extends React.Component {
     }
 
     _handleUpdateShippingAddress(address) {
-        console.log(address);
+        this._checkoutService.updateShippingAddress(address);
     }
 
     _handleUpdateBillingAddress(address) {
-        console.log(address);
+        this._checkoutService.updateBillingAddress(address);
     }
 
     _handleSubmitPayment(methodId) {
