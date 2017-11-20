@@ -6,12 +6,13 @@ import Cart from './cart-component';
 import Customer from './customer-component';
 import Payment from './payment-component';
 import Shipping from './shipping-component';
+import bcAppConfig from './bc-app-config';
 
 export default class CheckoutComponent extends React.Component {
     constructor(props) {
         super(props);
 
-        this._checkoutService = initializeSdk().checkoutService;
+        this._checkoutService = initializeSdk({ app: bcAppConfig }).checkoutService;
         this.state = this._checkoutService.getState();
     }
 
@@ -70,6 +71,8 @@ export default class CheckoutComponent extends React.Component {
 
                 <Payment
                     methods={ checkout.getPaymentMethods() }
+                    error={ errors.getSubmitOrderError() }
+                    onChange={ (...args) => this._handlePaymentMethodChange(...args) }
                     onSubmit={ (...args) => this._handleSubmitPayment(...args) }
                 />
             </section>
@@ -96,7 +99,15 @@ export default class CheckoutComponent extends React.Component {
         this._checkoutService.updateBillingAddress(address);
     }
 
-    _handleSubmitPayment(methodId) {
-        console.log(methodId);
+    _handleSubmitPayment(name, gateway, paymentData) {
+        const payload = {
+            payment: {
+                name,
+                gateway,
+                paymentData,
+            },
+        };
+
+        this._checkoutService.submitOrder(payload);
     }
 }
