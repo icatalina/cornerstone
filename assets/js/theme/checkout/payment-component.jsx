@@ -82,6 +82,8 @@ export default class PaymentComponent extends React.Component {
             selectedMethodId: methodId,
             selectedMethodGateway: gateway,
         });
+
+        this.props.onChange(methodId, gateway);
     }
 
     _handleCreditCardChange(paymentData) {

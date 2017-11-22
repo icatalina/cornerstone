@@ -21,11 +21,15 @@ export default class CheckoutComponent extends React.Component {
             this.setState(state);
         });
 
-        this._checkoutService.loadQuote();
-        this._checkoutService.loadBillingCountries();
-        this._checkoutService.loadShippingCountries();
-        this._checkoutService.loadShippingOptions();
-        this._checkoutService.loadPaymentMethods();
+        Promise.all([
+            this._checkoutService.loadQuote(),
+            this._checkoutService.loadBillingCountries(),
+            this._checkoutService.loadShippingCountries(),
+            this._checkoutService.loadShippingOptions(),
+            this._checkoutService.loadPaymentMethods(),
+        ]).then(() => {
+            this._checkoutService.finalizeOrderIfNeeded().catch(() => {});
+        });
     }
 
     componentWillUnmount() {
@@ -109,5 +113,9 @@ export default class CheckoutComponent extends React.Component {
         };
 
         this._checkoutService.submitOrder(payload);
+    }
+
+    _handlePaymentMethodChange(name, gateway) {
+        this._checkoutService.initializePaymentMethod(name, gateway);
     }
 }
